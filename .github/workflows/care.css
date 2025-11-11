@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #e7f7f0, #cde9db);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 45px 35px;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  position: relative;
+  max-height: 90vh;  /* container ki maximum height set ki gayi */
+  overflow-y: auto;  /* agar content us height se zyada ho jaye toh scroll enable ho jaye */
+
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #38755d;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #2e4038;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.next-btn {
+  background: #3b9c7a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #2b7e61;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 1.3rem;
+  animation: float 10s linear infinite;
+  opacity: 0.6;
+  color: #6fc89f;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
