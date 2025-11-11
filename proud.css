@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #d1f7d8, #c9e4f6);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  position: relative;
+  max-height: 90vh;  /* container ki maximum height set ki gayi */
+  overflow-y: auto;  /* agar content us height se zyada ho jaye toh scroll enable ho jaye */
+
+}
+
+
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #255b2f;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #2d2d2d;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.next-btn {
+  background: #3c9e59;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #317b47;
+}
+
+/* floating leaves */
+.leaf {
+  position: absolute;
+  font-size: 1.4rem;
+  animation: float 10s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
